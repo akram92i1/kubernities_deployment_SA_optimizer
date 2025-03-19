@@ -30,7 +30,7 @@ public class ApiController {
 
     @GetMapping("/")
     public String home() {
-        return "Welcome to Kubernetes Deployment Optimizer API!";
+        return "Welcome to Kubernetes Deployment Optimizer API !!";
     }
 
     // Accept JSON request from React frontend
