@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,10 +15,9 @@ import com.kubernetesdeploymentoptimizer.model.Node;
 import com.kubernetesdeploymentoptimizer.model.OptimizationRequest;
 import com.kubernetesdeploymentoptimizer.service.deploymentservice;
 
+@CrossOrigin(origins={"http://localhost:3000" , "https://akramkhelilinnov.xyz/"})
 @RestController
 @RequestMapping("/api")
-
-
 public class ApiController {
 
     private final deploymentservice dplmtService;
