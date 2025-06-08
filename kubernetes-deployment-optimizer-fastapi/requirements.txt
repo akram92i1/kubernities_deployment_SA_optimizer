@@ -1,0 +1,7 @@
+FastAPI
+uvicorn
+pydantic
+numpy
+scikit-learn
+pytest
+colorama
